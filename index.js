@@ -2,7 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const logger = require('./LoggerMiddleware')
 const app = express()
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT)
 
 app.use(express.json())
